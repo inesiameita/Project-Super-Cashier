@@ -1,4 +1,5 @@
 # Project-Super-Cashier
 Super Cashier
 
-![Flowchart Transaction](https://user-images.githubusercontent.com/128911434/231213632-bcb5881a-6d69-4a90-b04b-f1496bfcf9a9.png)
+
+![Flowchart Transaction (1)](https://user-images.githubusercontent.com/128911434/231214516-e38c392b-0a2a-4b59-8f6f-aaaa2b83d482.png)
