@@ -13,7 +13,7 @@ This program is made as a self service cashier system. Customers can input the i
 
 The customers will make an order by inputting the items purchased themself (self service system), then the total payment will appear at the end of the transaction.
 
-1. Create a transaction 
+1. Create a transaction ID 
 2. Display a list of items that can be ordered 
 3. Input how many items purchased
 4. Add 'item_name' , 'item_qty' , 'item_price' 
