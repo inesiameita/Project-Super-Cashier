@@ -13,18 +13,19 @@ from tabulate import tabulate
 class Transaction:
       def __init__(self):
           self.LIST_ITEM = dict()
+          print(f'Hello Customer, Selamat Datang! \nBerikut daftar buah yang tersedia minggu ini: \n')
+          self.print_menu()
 
+      def print_menu(self):  
           self.LIST_MENU = {1: ['Apel', 20_000], 2: ['Mangga', 25_000], 3: ['Jeruk', 30_000], 4: ['Semangka', 30_000], 5: ['Jambu', 10_000],
                        6: ['Alpukat', 28_000], 7: ['Pisang', 16_000], 8: ['Pepaya', 15_000], 9: ['Anggur', 45_000], 10: ['Nangka', 25_000]}
           
           table_LIST_MENU = pd.DataFrame(self.LIST_MENU).T
-          header = ['No', 'Nama Item', 'Harga per Kg']
-          print(f'Hello Customer, Selamat Datang! \nBerikut daftar buah yang tersedia minggu ini: \n' )
-        
+          header = ['No', 'Nama Item', 'Harga per Kg']     
           print(f'Daftar Buah Terbaru - Katalog Toko Buah Baru Muncul')
           print(f'======================================')
           print(tabulate(table_LIST_MENU, header, tablefmt ='github'))
-
+          
 
       def print_transaction(self):
           ''' This function is used to display the items purchased in order list as a table '''
@@ -41,8 +42,9 @@ class Transaction:
 
       def add_item(self):
           ''' This function is used to add the items purchased to order list '''
+          self.print_menu()
           try:
-                jumlah = int(input('Masukkan jumlah item yang ditambahkan : '))
+                jumlah = int(input('\nMasukkan jumlah item yang ditambahkan : '))
                 print(f'==================================================================')
                 index = 1
                 while index < jumlah + 1:
